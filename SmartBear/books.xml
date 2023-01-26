@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="booksModule.TC_Books_009_Test"/>
+      <class name="booksModule.TC_Books_006_Test"/>
+      <class name="booksModule.TC_Books_004_Test"/>
+      <class name="booksModule.TC_Books_003_Test"/>
+      <class name="booksModule.TC_Books_005_Test"/>
+      <class name="booksModule.TC_Books_008_Test"/>
+      <class name="booksModule.TC_Books_002_Test"/>
+      <class name="booksModule.Tc_Books_010_Test"/>
+      <class name="booksModule.TestCase_008_Test"/>
+      <class name="booksModule.TC_Books_001_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

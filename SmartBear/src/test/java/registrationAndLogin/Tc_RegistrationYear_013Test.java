@@ -6,12 +6,16 @@ import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.LoginClass;
-import pomRemo.HomePage;
-import pomRemo.RegistrationPage;
-
+import FrameWorkLibrary.LoginClass;
+import pomRepo.HomePage;
+import pomRepo.RegistrationPage;
+/***
+ * 
+ * @author Praveen
+ *
+ */
 public class Tc_RegistrationYear_013Test extends LoginClass {
-	@Test
+	@Test(groups = "functionality")
 	public void date() throws Exception {
 		HomePage hp=new HomePage(driver);
 		Thread.sleep(1000);

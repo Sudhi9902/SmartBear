@@ -6,11 +6,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-
-import genericLibrary.LoginClass;
-import pomRemo.HomePage;
-import pomRemo.RegistrationPage;
-
+import FrameWorkLibrary.LoginClass;
+import pomRepo.HomePage;
+import pomRepo.RegistrationPage;
+/***
+ * 
+ * @author Praveen
+ *
+ */
 public class Tc_RegistrationPageGender_002Test extends LoginClass{
 	WebDriverWait explicitwait;
 	 

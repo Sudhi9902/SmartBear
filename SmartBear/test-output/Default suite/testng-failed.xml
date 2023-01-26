@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MobileModule.TC_Mobile_001_Test">
+      <class name="registrationAndLogin.Tc_RegistrationConfirmPassword_008Test">
         <methods>
           <include name="browserSetUp"/>
-          <include name="TC_001_Mobile"/>
-          <include name="LogOut"/>
-          <include name="LoginUser"/>
-          <include name="quitBrowser"/>
+          <include name="confirmPassword"/>
+          <include name="browserTermination"/>
         </methods>
-      </class> <!-- MobileModule.TC_Mobile_001_Test -->
+      </class> <!-- registrationAndLogin.Tc_RegistrationConfirmPassword_008Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

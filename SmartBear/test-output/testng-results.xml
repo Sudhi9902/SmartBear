@@ -17,33 +17,15 @@
       <![CDATA[User Login Sucessfully]]>
     </line>
     <line>
-      <![CDATA[User Landed to Home Page Sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[User is Navigated to Mobile Phone Page Sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[User is clicking on Mobile button]]>
-    </line>
-    <line>
-      <![CDATA[Shop. Apple Mobile Page]]>
-    </line>
-    <line>
-      <![CDATA[User Logout Sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[Server Closed Sucessfully]]>
+      <![CDATA[user is able to click on compare page]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-24T13:19:34 IST" name="Default suite" finished-at="2023-01-24T13:19:48 IST" duration-ms="14356">
+  <suite started-at="2023-01-25T12:59:32 IST" name="Default suite" finished-at="2023-01-25T12:59:47 IST" duration-ms="15311">
     <groups>
-      <group name="Functionality">
-        <method signature="TC_Mobile_001_Test.TC_001_Mobile()[pri:0, instance:MobileModule.TC_Mobile_001_Test@6f96c77]" name="TC_001_Mobile" class="MobileModule.TC_Mobile_001_Test"/>
-      </group> <!-- Functionality -->
     </groups>
-    <test started-at="2023-01-24T13:19:34 IST" name="Default test" finished-at="2023-01-24T13:19:48 IST" duration-ms="14356">
-      <class name="MobileModule.TC_Mobile_001_Test">
-        <test-method is-config="true" signature="browserSetUp(java.lang.String)[pri:0, instance:MobileModule.TC_Mobile_001_Test@6f96c77]" started-at="2023-01-24T13:19:34 IST" name="browserSetUp" finished-at="2023-01-24T13:19:41 IST" duration-ms="7155" status="PASS">
+    <test started-at="2023-01-25T12:59:32 IST" name="Default test" finished-at="2023-01-25T12:59:47 IST" duration-ms="15311">
+      <class name="booksModule.TC_Books_008_Test">
+        <test-method is-config="true" signature="browserSetUp(java.lang.String)[pri:0, instance:booksModule.TC_Books_008_Test@6f96c77]" started-at="2023-01-25T12:59:32 IST" name="browserSetUp" finished-at="2023-01-25T12:59:38 IST" duration-ms="6024" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,44 +48,103 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetUp -->
-        <test-method is-config="true" signature="LoginUser()[pri:0, instance:MobileModule.TC_Mobile_001_Test@6f96c77]" started-at="2023-01-24T13:19:41 IST" name="LoginUser" finished-at="2023-01-24T13:19:44 IST" duration-ms="3141" status="PASS">
+        <test-method is-config="true" signature="LoginUser()[pri:0, instance:booksModule.TC_Books_008_Test@6f96c77]" started-at="2023-01-25T12:59:38 IST" name="LoginUser" finished-at="2023-01-25T12:59:40 IST" duration-ms="2718" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User Login Sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- LoginUser -->
-        <test-method signature="TC_001_Mobile()[pri:0, instance:MobileModule.TC_Mobile_001_Test@6f96c77]" started-at="2023-01-24T13:19:44 IST" name="TC_001_Mobile" finished-at="2023-01-24T13:19:46 IST" duration-ms="1945" status="PASS">
+        <test-method signature="clickonCompare()[pri:0, instance:booksModule.TC_Books_008_Test@6f96c77]" started-at="2023-01-25T12:59:40 IST" name="clickonCompare" finished-at="2023-01-25T12:59:46 IST" duration-ms="5223" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[User Landed to Home Page Sucessfully]]>
-            </line>
-            <line>
-              <![CDATA[User is Navigated to Mobile Phone Page Sucessfully]]>
-            </line>
-            <line>
-              <![CDATA[User is clicking on Mobile button]]>
-            </line>
-            <line>
-              <![CDATA[Shop. Apple Mobile Page]]>
+              <![CDATA[user is able to click on compare page]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC_001_Mobile -->
-        <test-method is-config="true" signature="LogOut()[pri:0, instance:MobileModule.TC_Mobile_001_Test@6f96c77]" started-at="2023-01-24T13:19:46 IST" name="LogOut" finished-at="2023-01-24T13:19:48 IST" duration-ms="1690" status="PASS">
+        </test-method> <!-- clickonCompare -->
+        <test-method is-config="true" signature="LogOut()[pri:0, instance:booksModule.TC_Books_008_Test@6f96c77]" started-at="2023-01-25T12:59:46 IST" name="LogOut" finished-at="2023-01-25T12:59:47 IST" duration-ms="1279" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="menubar-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/samples/TestComplete14/smartstore/Customer/Info" rel="nofollow">...</a> is not clickable at point (1109, 21). Other element would receive the click: <a class="menubar-link" href="/samples/TestComplete14/smartstore/boards">...</a>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P7OORB0', ip: '192.168.136.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TECQNIO\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4392a1c77003ae83a287e30998ad6e1d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="menubar-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/samples/TestComplete14/smartstore/Customer/Info" rel="nofollow">...</a> is not clickable at point (1109, 21). Other element would receive the click: <a class="menubar-link" href="/samples/TestComplete14/smartstore/boards">...</a>
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P7OORB0', ip: '192.168.136.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\TECQNIO\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4392a1c77003ae83a287e30998ad6e1d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at FrameWorkLibrary.Basedata.LogOut(Basedata.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
-            <line>
-              <![CDATA[User Logout Sucessfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- LogOut -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:MobileModule.TC_Mobile_001_Test@6f96c77]" started-at="2023-01-24T13:19:48 IST" name="quitBrowser" finished-at="2023-01-24T13:19:48 IST" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:booksModule.TC_Books_008_Test@6f96c77]" started-at="2023-01-25T12:59:47 IST" name="quitBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1674631787489" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Server Closed Sucessfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- MobileModule.TC_Mobile_001_Test -->
+      </class> <!-- booksModule.TC_Books_008_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,20 +1,20 @@
 package WishListAndCart;
 
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import FrameWorkLibrary.Basedata;
 import pomRepo.Repository;
-
+/***
+ * 
+ * @author Raghav
+ *
+ */
 
 public class TC_003Test  extends Basedata {
-	/////////////////////////////// Varify that whether user is able to remove the the product from the wishlist
+	/////////////////////////////// Verify that whether user is able to remove the the product from the wishlist
 
 	@Test
 	public void RemoveProductFromWishlist() {

@@ -14,7 +14,7 @@ public class Tc_Books_010_Test extends Basedata {
 	@Test
 	public void clickOnWishList() throws InterruptedException {
 		PomRepoForSmartBear b1 = new PomRepoForSmartBear(driver);
-		b1.getEmailTextBox().click();
+		b1.getBookNavBarButton().click();
 		b1.getForums().click();
 		Reporter.log("user is able to click on forums", true);
 

@@ -25,12 +25,12 @@ public class ReadData1 {
 	 * @return
 	 */
 
-	//reading from property file
+	// reading from property file
 	public static String fromPropertyFile(String key) {
 		FileInputStream fis = null;
 		Properties properties = null;
 		try {
-			fis = new FileInputStream(new File("./src/test/resources/testData/configuration.properties"));
+			fis = new FileInputStream(new File("./TestData/configuration.properties"));
 			properties = new Properties();
 			properties.load(fis);
 
@@ -43,13 +43,12 @@ public class ReadData1 {
 
 	}
 
-
-	//extracting only single cell value from excel
+	// extracting only single cell value from excel
 	public static String fromExcel(String sheetName, int rowNo, int cellNo) {
 		FileInputStream fis = null;
 		Workbook workbook = null;
 		try {
-			fis = new FileInputStream(new File("./src/test/resources/testData/SamrtBear.xlsx"));
+			fis = new FileInputStream(new File("./TestData/SamrtBear.xlsx"));
 			workbook = WorkbookFactory.create(fis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -62,15 +61,15 @@ public class ReadData1 {
 
 	}
 
-	//reading multiple data from the excel(rows and columns)
+	// reading multiple data from the excel(rows and columns)
 	@DataProvider
 	public static String[][] multipleDataFromExcel() {
-		FileInputStream fis=null;
-		Workbook workBook=null;
+		FileInputStream fis = null;
+		Workbook workBook = null;
 		try {
-			fis = new FileInputStream("./src/test/resources/testData/SamrtBear.xlsx");
+			fis = new FileInputStream("./TestData/SamrtBear.xlsx");
 		} catch (FileNotFoundException e) {
-			
+
 			e.printStackTrace();
 		}
 		try {
@@ -81,26 +80,25 @@ public class ReadData1 {
 			e.printStackTrace();
 		}
 		Sheet sheetInfo = workBook.getSheet("TestCases");
-		int rowCount = sheetInfo.getPhysicalNumberOfRows()-1;
-		int columnCount = sheetInfo.getRow(1).getPhysicalNumberOfCells()-1;
-		String data[][]=new String[rowCount][columnCount];
+		int rowCount = sheetInfo.getPhysicalNumberOfRows() - 1;
+		int columnCount = sheetInfo.getRow(1).getPhysicalNumberOfCells() - 1;
+		String data[][] = new String[rowCount][columnCount];
 
-		for(int i=1,k=0;i<=rowCount;i++,k++) {
-			for(int j=1,l=0;j<=columnCount;j++,l++) {
-				data[k][l]=sheetInfo.getRow(i).getCell(j).toString();
+		for (int i = 1, k = 0; i <= rowCount; i++, k++) {
+			for (int j = 1, l = 0; j <= columnCount; j++, l++) {
+				data[k][l] = sheetInfo.getRow(i).getCell(j).toString();
 			}
 		}
 		return data;
 
 	}
 
-
-	//reading a single row data
-	public static String[][] DataFromExcel(String sheetName,int rowNo) {
-		FileInputStream fis=null;
-		Workbook workBook=null;
+	// reading a single row data
+	public static String[][] DataFromExcel(String sheetName, int rowNo) {
+		FileInputStream fis = null;
+		Workbook workBook = null;
 		try {
-			fis = new FileInputStream("./src/test/resources/testData/SmartBear.xlsx");
+			fis = new FileInputStream("./TestData/SmartBear.xlsx");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -113,21 +111,15 @@ public class ReadData1 {
 			e.printStackTrace();
 		}
 		Sheet sheetInfo = workBook.getSheet(sheetName);
-		int columnCount = sheetInfo.getRow(rowNo).getPhysicalNumberOfCells()-1;
-		String data[][]=new String[1][columnCount];
+		int columnCount = sheetInfo.getRow(rowNo).getPhysicalNumberOfCells() - 1;
+		String data[][] = new String[1][columnCount];
 
-
-		for(int j=0;j<columnCount;j++) {
-			data[0][j]=sheetInfo.getRow(rowNo).getCell(j+1).toString();
+		for (int j = 0; j < columnCount; j++) {
+			data[0][j] = sheetInfo.getRow(rowNo).getCell(j + 1).toString();
 		}
 
 		return data;
 
 	}
 
-
-	
-	
 }
-
-

@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.LoginClass;
-import pomRemo.HomePage;
-import pomRemo.RegistrationPage;
+import FrameWorkLibrary.LoginClass;
+import pomRepo.HomePage;
+import pomRepo.RegistrationPage;
 
 public class Tc_RegistrationDay_011Test  extends LoginClass{
 	@Test

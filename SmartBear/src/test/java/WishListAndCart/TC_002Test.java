@@ -6,7 +6,11 @@ import org.testng.annotations.Test;
 
 import FrameWorkLibrary.Basedata;
 import pomRepo.Repository;
-
+/***
+ * 
+ * @author Raghav
+ *
+ */
 public class TC_002Test extends Basedata{
 
 	
@@ -16,6 +20,7 @@ public class TC_002Test extends Basedata{
 		
 		 Repository base = new Repository(driver);
 		 base.getShoppingcart().click();
+		 base.getGotoCart().click();
 		 Reporter.log("Shopping cart displayed Succesfully", true);
 	}
 }
